@@ -1,7 +1,9 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-const Result = ({ navigation }) => {
+const Result = ({ route, navigation }) => {
+    const { score } = route.params
+    console.log(score)
     return (
         <View>
             <View>
